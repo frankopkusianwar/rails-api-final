@@ -4,5 +4,6 @@ class CreateProductCategories < ActiveRecord::Migration[6.1]
 
       t.timestamps
     end
+    add_reference :product_categories, :product, index: true
   end
 end

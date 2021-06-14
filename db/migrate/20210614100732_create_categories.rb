@@ -5,6 +5,7 @@ class CreateCategories < ActiveRecord::Migration[6.1]
       t.string :metaTitle
       t.string :slug
       t.text :content
+      t.integer :parent_id
 
       t.timestamps
     end
