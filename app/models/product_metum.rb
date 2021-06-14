@@ -1,0 +1,2 @@
+class ProductMetum < ApplicationRecord
+end
