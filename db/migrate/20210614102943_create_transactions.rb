@@ -9,5 +9,7 @@ class CreateTransactions < ActiveRecord::Migration[6.1]
 
       t.timestamps
     end
+    add_reference :transactions, :order, index: true
+    add_reference :transactions, :user, index: true
   end
 end
