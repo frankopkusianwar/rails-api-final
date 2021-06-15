@@ -14,5 +14,6 @@ class CreateProducts < ActiveRecord::Migration[6.1]
 
       t.timestamps
     end
+    add_reference :products, :user, index: true
   end
 end

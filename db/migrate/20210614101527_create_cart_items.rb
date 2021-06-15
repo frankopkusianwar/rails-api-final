@@ -10,5 +10,7 @@ class CreateCartItems < ActiveRecord::Migration[6.1]
 
       t.timestamps
     end
+    add_reference :cart_items, :product, index: true
+    add_reference :cart_items, :cart, index: true
   end
 end
