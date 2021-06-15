@@ -4,7 +4,7 @@ class CreateOrderItems < ActiveRecord::Migration[6.1]
       t.string :sku
       t.decimal :price
       t.decimal :discount
-      t.int :quantity
+      t.integer :quantity
       t.text :content
 
       t.timestamps

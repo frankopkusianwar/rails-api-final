@@ -5,11 +5,11 @@ class CreateProducts < ActiveRecord::Migration[6.1]
       t.string :slug
       t.string :metaTitle
       t.text :summary
-      t.int :type
+      t.integer :type
       t.string :sku
       t.decimal :price
       t.decimal :discount
-      t.int :quantity
+      t.integer :quantity
       t.text :content
 
       t.timestamps

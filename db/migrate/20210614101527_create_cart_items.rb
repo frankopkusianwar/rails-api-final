@@ -4,7 +4,7 @@ class CreateCartItems < ActiveRecord::Migration[6.1]
       t.string :sku
       t.decimal :price
       t.decimal :discount
-      t.int :quantity
+      t.integer :quantity
       t.boolean :active
       t.text :content
 
